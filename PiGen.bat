@@ -17,7 +17,7 @@ SET /A fact7 = %n% - 7
 SET /A fact8 = %n% - 8
 SET /A numer = %n%*%fact1%*%fact2%*%fact3%*%fact4%*%fact5%*%fact6%*%fact7%*%fact8%
 SET /A sub = %n% - %r%
-SET /A demo = %sub%*%fact5%*%fact4%*%fact7%*%fact8%
+SET /A demo = %sub%*%fact5%*%fact6%*%fact7%*%fact8%
 SET /A per = %numer% / %demo%  
 SET /A by = %per% * 4 
 SET /A kiloby = %by% / 1000 
@@ -27,6 +27,7 @@ SET /A teby = %giby% / 1000
 SET /A seco = %per% * 1
 SET /A min = %seco% / 60
 SET /A hour = %min% / 60
+SET /A minlef = %min% % 60
 
 ::MAIN
 :MAIN
@@ -37,7 +38,7 @@ echo you are about to generate: %per% numbers
 echo which is nearly
 echo %seco%:seconds 
 echo %min%:minutes
-echo %hour%:hours
+echo %hour%:hours and %minlef% minutes left
 echo %by%:bytes
 echo %kiloby%:KB
 echo %meby%:MB
