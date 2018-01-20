@@ -27,7 +27,8 @@ SET /A teby = %giby% / 1000
 SET /A seco = %per% * 1
 SET /A min = %seco% / 60
 SET /A hour = %min% / 60
-SET /A minlef = %min% % 60
+SET /A minlef = %min% %% 60
+
 
 ::MAIN
 :MAIN
@@ -38,7 +39,7 @@ echo you are about to generate: %per% numbers
 echo which is nearly
 echo %seco%:seconds 
 echo %min%:minutes
-echo %hour%:hours and %minlef% minutes left
+echo %hour% hour(s) and %minlef% minute(s) left
 echo %by%:bytes
 echo %kiloby%:KB
 echo %meby%:MB
