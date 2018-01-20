@@ -1,8 +1,3 @@
-rem ONLY IN ALPHA!!!
-rem This will NOT GENERATE ALL THE NUMBERS!!!
-rem this is by @bobdinh139
-rem License included
-
 @echo off
 
 set n=10
@@ -45,6 +40,7 @@ echo %kiloby%:KB
 echo %meby%:MB
 echo %giby%:GB
 echo %teby%:TB
+:MAINl
 echo Are you sure you want to continue (y/n)? : 
 set/p "input=>"
 if %input% ==y goto Fl
@@ -53,8 +49,8 @@ if NOT %input% ==y goto F3
 if NOT %input% ==n goto F3
 
 :F3
-echo Type in valid choice 
-goto MAIN
+echo invalid choice 
+goto MAINl
 
 :F2
 
@@ -262,9 +258,9 @@ goto  Ell
 
 
 
+rem 0,8 00 0,8
 
-
-::FUNC4 (testing)
+::FUNC4
 
 :Elll
 echo Almost Done...
@@ -273,13 +269,9 @@ set first=0
 set second=0
 set third=0
 set fourth=0
-set temp=0
-
 
 :WW
-SET /A forca = 8 - %temp%
-IF %forca%==0 goto FF
-IF %fourth%==%forca% goto EE
+IF %fourth%==8 goto EE
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 SET /A fourth = %fourth% + 1
@@ -291,65 +283,403 @@ goto WW
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 
-:EXT
-rem set fourth=0
-SET /A temp = %temp% + 1
-goto WW
-
-:FF
-set temp=0
 :EEA
-SET /A forcaa = 8 - %temp%
-IF %forcaa%==0 goto EEl
-IF %first%==%forcaa% goto EXTl
+IF %first%==8 goto EXTl
 SET /A first = %first% + 1
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 goto EEA
 
 :EXTl
-rem set first=0
-SET /A temp = %temp% + 1
-goto EEA
 
-:EEl
 set first=0
 set fourth=0
-set temp=0
 
 :EEla
-SET /A forcab = 8 - %temp%
-IF %forcab%==0 goto EEll
-IF %first%==%forcab% goto EXTll
+IF %first%==8 goto EXTll
 SET /A first = %first% + 1
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 goto EEla
 
 :EXTll
-rem set first=0
-SET /A temp = %temp% + 1
-goto EEla
-
-:EEll
-set temp=0
-SET /A forcac = 8 - %temp%
-IF %forcac%==0 goto EElll
-IF %fourth%==%forcac% goto EXTla
+IF %fourth%==8 goto EXTla
 SET /A fourth = %fourth% + 1
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
-goto EEll
+goto EXTll
+
+
+
+
+rem 0 0,8 0,8 0
+
+::FUNC5
 
 :EXTla
-rem set fourth=0
-SET /A temp = %temp% + 1
-goto EEll
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:EIGHT
+IF %second%==8 goto EIGHT2
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A second = %second% + 1
+
+goto EIGHT
+
+:EIGHT2
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:EIGHT3
+IF %third%==8 goto EIGHT4
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT3
+
+:EIGHT4
+
+set second=0
+set third=0
+
+:EIGHT42
+IF %third%==8 goto EIGHT5
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT42
+
+:EIGHT5
+IF %second%==8 goto EIGHT6
+SET /A second = %second% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT5
+
+
+
+
+::FUNC6
+rem 0,8 0,8 00
+
+:EIGHT6
+
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:EIGHTEXT2
+
+IF %second%==8 goto EIGHT7
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A second = %second% + 1
+
+goto EIGHTEXT2
+
+:EIGHT7
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:EIGHT8
+IF %first%==8 goto EIGHT9
+SET /A first = %first% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT8
+
+:EIGHT9
+
+set second=0
+set first=0
+
+:EIGHT10
+IF %first%==8 goto EIGHT11
+SET /A first = %first% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT10
+
+:EIGHT11
+IF %second%==8 goto EIGHT12
+SET /A second = %second% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT11
+
+
+::FUNC7
+rem 00 0,8 0,8
+
+:EIGHT12
+
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:EIGHTEXT
+
+IF %fourth%==8 goto EIGHT13
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A fourth = %fourth% + 1
+
+goto EIGHTEXT
+
+:EIGHT13
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:EIGHT14
+IF %third%==8 goto EIGHT15
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT14
+
+:EIGHT15
+
+set fourth=0
+set third=0
+
+:EIGHT16
+IF %third%==8 goto EIGHT17
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT16
+
+:EIGHT17
+IF %fourth%==8 goto SEVEN
+SET /A fourth = %fourth% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto EIGHT17
+
+
+::FUNC8
+rem 00 0,7 0,7
+
+:SEVEN
+
+
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:SEVENEXT
+
+IF %fourth%==7 goto SEVEN2
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A fourth = %fourth% + 1
+goto SEVENEXT
+
+:SEVEN2
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:SEVEN3
+IF %third%==7 goto SEVEN4
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN3
+
+:SEVEN4
+
+set fourth=0
+set third=0
+
+:SEVEN5
+IF %third%==7 goto SEVEN6
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN5
+
+:SEVEN6
+IF %fourth%==7 goto SEVEN7
+SET /A fourth = %fourth% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN6
+
+
+::FUNC9
+rem 0,7 00 0,7
+
+:SEVEN7
+
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:SEVENEXT1
+
+IF %fourth%==7 goto SEVEN8
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A fourth = %fourth% + 1
+
+goto SEVENEXT1
+
+:SEVEN8
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:SEVEN9
+IF %first%==7 goto SEVEN10
+SET /A first = %first% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN9
+
+:SEVEN10
+
+set fourth=0
+set first=0
+
+:SEVEN11
+IF %first%==7 goto SEVEN12
+SET /A first = %first% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN11
+
+:SEVEN12
+IF %fourth%==7 goto SEVEN13
+SET /A fourth = %fourth% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN12
+
+
+::FUNC10
+rem 0,7 0,7 00
+:SEVEN13
+
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:SEVENEXT2
+
+IF %second%==7 goto SEVEN14
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A second = %second% + 1
+
+goto SEVENEXT2
+
+:SEVEN14
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:SEVEN15
+IF %first%==7 goto SEVEN16
+SET /A first = %first% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN15
+
+:SEVEN16
+
+set second=0
+set first=0
+
+:SEVEN17
+IF %first%==7 goto SEVEN18
+SET /A first = %first% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN17
+
+:SEVEN18
+IF %second%==7 goto SEVEN19
+SET /A second = %second% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN18
+
+
+::FUNC11
+rem 0 0,7 0,7 0
+
+:SEVEN19
+
+set first=0
+set second=0
+set third=0
+set fourth=0
+
+:SEVENEXT3
+
+IF %third%==7 goto SEVEN20
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+SET /A third = %third% + 1
+
+goto SEVENEXT3
+
+:SEVEN20
+
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+
+:SEVEN21
+IF %second%==7 goto SEVEN22
+SET /A second = %second% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN21
+
+:SEVEN22
+
+set second=0
+set third=0
+
+:SEVEN23
+IF %second%==7 goto SEVEN24
+SET /A second = %second% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN23
+
+:SEVEN24
+IF %third%==7 goto SIX
+SET /A third = %third% + 1
+echo %first%%second%%third%%fourth%
+echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
+goto SEVEN24
+
+
+::FUNC12
+rem 0,6 0,6 00
+
+:SIX
+start %userprofile%/Desktop/PiGen6.bat
+
 
 :EElll
 echo finishing ...
 ping n- 2 127.0.0.1>nul
 echo [*] Done!
 echo check the file "worldlist" in your desktop.
-start %userprofile%/Desktop/worldlist.txt
+start %userprofile%/Desktop/wordlist.txt
 pause 
