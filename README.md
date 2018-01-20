@@ -12,7 +12,7 @@ Just a potential program, should not download right now becuase it is not fully 
 
 ## how to use
 
-Copy and paste the code from bat file here to your new text document then remame it to .bat
+Copy and paste the code from bat file here to your new text document then remame it to *.bat, remane it just like the name here and place all of them to Desktop, all you need to do is copy and paste
 
 _Why?_
 
