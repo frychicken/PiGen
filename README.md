@@ -1,6 +1,6 @@
 # PiGen
 
-**_In alpha only, will be developed more, keep in mind that this will not generate all number!! (only part of them so wait more time), it will also be optimised in later release! (not recommend to download right now) _**
+**_In alpha only, will be developed more, keep in mind that this will not generate all number!! (only part of them so wait more time), it will also be optimised in later release! (not recommend to download right now)_**
 
 PIN Generator
 
