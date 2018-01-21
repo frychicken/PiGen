@@ -1,6 +1,6 @@
 # PiGen
 
-**_Will be developed more, duplicates some numbers!_**
+**_duplicates 0000 4 times_**
 
 PIN Generator
 
@@ -21,5 +21,3 @@ _Why?_
 remeber to feedback.
 
 read more, visit index.md or visit this website [here](https://bobdinh139.github.io/PiGen/)  (located on /docs/ folder).
-
-#### Still in development
