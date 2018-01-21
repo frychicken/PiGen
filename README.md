@@ -6,7 +6,7 @@ Generate all possible combinations of PIN with batch file and only with batch ( 
 
 In the future, i will create new batch file (not this) which will generate all possible combinations alphabet, numeric, special characters password, customize length.
 
-This is a officail release version ( ver 5.1.1 - Network Authentication Required )
+This is a official release version for Windows ( ver 5.1.1 - Network Authentication Required )
 
 ## how to use
 
