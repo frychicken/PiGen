@@ -1,5 +1,10 @@
 @echo off
 
+rem Thank you for using
+rem PIN GENERATOR (PiGen)
+rem Generate PIN code (4 digits)
+rem license to @bobdinh139
+
 set n=10
 set r=4
 SET /A fact1 = %n% - 1
