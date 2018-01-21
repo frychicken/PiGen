@@ -9,7 +9,7 @@ set second=0
 set third=0
 set fourth=0
 
-rem: 000 still 0 to 9
+rem: 000 still 0 to 6
 
 :WHILE
 
@@ -24,7 +24,7 @@ goto WHILE
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 
-rem 00 still 0 to 9 0 still 9
+rem 00 still 0 to 6 0 still 6
 
 :ENDA
 IF %third%==6 goto ENDl
@@ -45,7 +45,7 @@ echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 goto ENDla
 
-rem 00 still 0 still 9 0 to 9
+rem 00 still 0 still 6 0 to 6
 
 :ENDll
 IF %fourth%==6 goto ENDlll
@@ -201,7 +201,7 @@ goto  Ell
 
 
 
-rem 0,8 00 0,8
+rem 0,5 00 0,5
 
 ::FUNC4
 
@@ -255,7 +255,7 @@ goto EXTll
 
 
 
-rem 0 0,8 0,8 0
+rem 0 0,5 0,5 0
 
 ::FUNC5
 
@@ -308,7 +308,7 @@ goto EIGHT5
 
 
 ::FUNC6
-rem 0,8 0,8 00
+rem 0,5 0,5 00
 
 :EIGHT6
 
@@ -359,7 +359,7 @@ goto EIGHT11
 
 
 ::FUNC7
-rem 00 0,8 0,8
+rem 00 0,5 0,5
 
 :EIGHT12
 
@@ -410,7 +410,7 @@ goto EIGHT17
 
 
 ::FUNC8
-rem 00 0,7 0,7
+rem 00 0,4 0,4
 
 :SEVEN
 
@@ -461,7 +461,7 @@ goto SEVEN6
 
 
 ::FUNC9
-rem 0,7 00 0,7
+rem 0,4 00 0,4
 
 :SEVEN7
 
@@ -512,7 +512,7 @@ goto SEVEN12
 
 
 ::FUNC10
-rem 0,7 0,7 00
+rem 0,4 0,4 00
 :SEVEN13
 
 set first=0
@@ -562,7 +562,7 @@ goto SEVEN18
 
 
 ::FUNC11
-rem 0 0,7 0,7 0
+rem 0 0,4 0,4 0
 
 :SEVEN19
 
@@ -613,7 +613,7 @@ goto SEVEN24
 
 
 ::FUNC12
-rem 0,6 0,6 00
+rem 0,3 0,3 00
 
 :SIX
 start %userprofile%/Desktop/PiGen3.bat
