@@ -3,12 +3,11 @@
 #thank you for using
 # license @bobdinh139
 
-
 endl () {
 echo [*] Done!
 }
 ixit() {
-((temp4 = $temp4 + 1))
+(( temp4 = $temp4 + 1 ))
 if [ $temp4 -lt 9 ]
 then
 startl
@@ -30,7 +29,7 @@ ixit
 fi
 }
 seven19 () {
-((temp1 = $temp1 + 1))
+(( temp1 = $temp1 + 1 ))
 if [ $temp1 -lt 9 ]
 then
 begin
@@ -40,54 +39,69 @@ then
 exitl
 fi
 }
-main () {
+mainl () {
 let temp4=0
-
 startl () {
-
 let temp=0
-
 bigin () {
-
 let temp1=0
-
 begin () {
 let first=$temp1
 let second=0
 let third=0
 let fourth=$temp
-while [ $third != $temp4 ]
-do
-((third = $third + 1))
-echo $first$second$third$fourth
+sevenext3 () {
+if [ $third == $temp4 ]
+then
+seven20
+else
+(( third = $third + 1 ))
+echo $first $second $third $fourth
 #echo $first$second$third$fourth >>wordlist.txt
-done
-while [ $second != $temp4 ]
-do
-((second = $second + 1))
-echo $first$second$third$fourth
+sevenext3
+fi
+}
+seven20 () {
+if [ $second == $temp4 ]
+then
+seven22
+else
+(( second = $second + 1 ))
+echo $first $second $third $fourth
 #echo $first$second$third$fourth >>wordlist.txt
-done
-
+seven20
+fi
+}
+}
+seven22 () {
 let second=0
 let third=0
-while [ $second != $temp4 ]
-do
-((second = $second + 1))
-echo $first$second$third$fourth
+seven23 () {
+if [ $second == $temp4 ]
+then
+seven24
+else
+(( second = $second + 1 ))
+echo $first $second $third $fourth
 #echo $first$second$third$fourth >>wordlist.txt
-done
-while [ $third != $temp4 ]
-do
-((third = $third + 1))
-echo $first$second$third$fourth
+seven23
+fi
+}
+seven24 () {
+if [ $third == $temp4 ]
+then
+seven19
+else
+(( third = $third + 1 ))
+echo $first $second $third $fourth
 #echo $first$second$third$fourth >>wordlist.txt
-done
+seven24
+fi
 }
 }
 }
 }
-
+}
 let n=10
 let r=4
 (( fact1 = $n - 1 ))
@@ -129,29 +143,17 @@ read input
 if [ $input == 'y' ]
  then 
 echo Doing it...
-main
-return
+mainl
 fi
 if [ $input == 'n' ]
  then 
 echo exiting...
 exit
- else 
+fi
+if [ $input != 'y' && $input != 'n' ]
+ then
 echo invail input
 con
 fi
 }
 con
-
-
-
-
-
-
-
-
-
-
-
-
-
