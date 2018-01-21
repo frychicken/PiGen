@@ -161,7 +161,12 @@ echo patching files...
 echo 0000 >> "%userprofile%\Desktop\w0rdlist.txt"
 timeout 0 > nul
 echo New file without duplicated letters is located at /Desktop/w0rdlist.txt
-echo File with duplicated letters is located at /Desktop/wordlist.txt
+echo File with duplicated letters is found at /Desktop/wordlist.txt
+echo deleting "wordlist"...
+pushd "%userprofile%/Desktop"
+del wordlist.txt
+popd
+timeout 0 > nul
 echo Opening file "w0rdlist" for you ...
 timeout 1 > nul
 start %userprofile%/Desktop/w0rdlist.txt
