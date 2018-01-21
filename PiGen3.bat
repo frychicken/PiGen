@@ -9,7 +9,7 @@ set second=0
 set third=0
 set fourth=0
 
-rem: 000 still 0 to 9
+rem: 000 still 0 to 3
 
 :WHILE
 
@@ -24,7 +24,7 @@ goto WHILE
 echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 
-rem 00 still 0 to 9 0 still 9
+rem 00 still 0 to 3 0 still 3
 
 :ENDA
 IF %third%==3 goto ENDl
@@ -33,7 +33,7 @@ echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 goto ENDA
 
-rem 00 0 to 6 0
+rem 00 0 to 3 0
 
 :ENDl
 set third=0
@@ -45,7 +45,7 @@ echo %first%%second%%third%%fourth%
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 goto ENDla
 
-rem 00 still 0 still 9 0 to 9
+rem 00 still 0 still 3 0 to 3
 
 :ENDll
 IF %fourth%==3 goto ENDlll
@@ -201,7 +201,7 @@ goto  Ell
 
 
 
-rem 0,8 00 0,8
+rem 0,2 00 0,2
 
 ::FUNC4
 
@@ -255,7 +255,7 @@ goto EXTll
 
 
 
-rem 0 0,8 0,8 0
+rem 0 0,2 0,2 0
 
 ::FUNC5
 
@@ -308,7 +308,7 @@ goto EIGHT5
 
 
 ::FUNC6
-rem 0,8 0,8 00
+rem 0,2 0,2 00
 
 :EIGHT6
 
@@ -359,7 +359,7 @@ goto EIGHT11
 
 
 ::FUNC7
-rem 00 0,8 0,8
+rem 00 0,2 0,2
 
 :EIGHT12
 
