@@ -1,10 +1,5 @@
 @echo off
 
-rem Thank you for using
-rem PIN GENERATOR (PiGen)
-rem Generate PIN code (4 digits)
-rem license to @bobdinh139
-
 set n=10
 set r=4
 SET /A fact1 = %n% - 1
@@ -159,9 +154,17 @@ IF %temp4% LEQ 9 goto STARTl
 echo %first%%second%%third%%fourth% / 9999
 echo [*] Done!
 echo check the file "wordlist" in your desktop.
-echo Opening file "wordlist" for you ...
+echo Deleting duplicated letters...
+findstr /v /i /c:"0000" wordlist.txt > w0rdlist.txt
+timeout 0 > nul
+echo patching files...
+echo 0000 >> "%userprofile%\Desktop\w0rdlist.txt"
+timeout 0 > nul
+echo New file without duplicated letters is located at /Desktop/w0rdlist.txt
+echo File with duplicated letters is located at /Desktop/wordlist.txt
+echo Opening file "w0rdlist" for you ...
 timeout 1 > nul
-start %userprofile%/Desktop/wordlist.txt
+start %userprofile%/Desktop/w0rdlist.txt
 pause 
 
 echo x=msgbox("Remember to feedback, stay tuned for similar programs!" , 1+64 , "Thank you") >message.vbs
