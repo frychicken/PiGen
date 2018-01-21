@@ -2,7 +2,7 @@
 
 PIN Generator
 
-Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code)
+Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code), for Windows only at the moment
 
 In the future, i will create new batch file (not this) which will generate all possible combinations alphabet, numeric, special characters password, customize length.
 
