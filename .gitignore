@@ -1,3 +1,5 @@
 *.bat
-/alphaver/*.bat
-/alphaver/*.md
+alphaver/*.bat
+alphaver/*.md
+beta/*.bat
+beta/*.md
