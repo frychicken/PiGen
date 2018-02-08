@@ -29,7 +29,7 @@ Official release
 
 Fix duplicates 0000 by delete all zeros and add 1 zeros (create two files and delete another file)
 
-Readmore @Readme.md or in docs/index.md or @index.md
+Readmore @Readme.md or click [here](Oldervers/PiGen.bat) (to read code), you can see in the history of version 5.2.1
 
 ## Ver 5.2.1 - Web Server Is Down
 
