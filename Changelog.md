@@ -37,5 +37,7 @@ Official release
 
 improve interface
 
+add w0rdlist.txt to show output
+
 Readmore @Readme.md or in docs/index.md or @index.md
   
