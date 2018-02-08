@@ -30,4 +30,12 @@ Official release
 Fix duplicates 0000 by delete all zeros and add 1 zeros (create two files and delete another file)
 
 Readmore @Readme.md or in docs/index.md or @index.md
+
+## Ver 5.2.1 - Web Server Is Down
+
+Official release 
+
+improve interface
+
+Readmore @Readme.md or in docs/index.md or @index.md
   
