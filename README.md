@@ -32,6 +32,10 @@ _beta_
 
 located at /beta/
 
+_Stable_
+
+located at /Oldervers/
+
 **_all read me and explain for each version included_**
 
 ## Changelog available @changelog.md
