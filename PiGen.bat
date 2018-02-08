@@ -33,8 +33,10 @@ SET /A minlef = %min% %% 60
 
 :MAIN
 echo PIN generator starting...
-ping n- 2 127.0.0.1>nul
+timeout 0 > nul
 pause
+echo calculating...
+ping n- 2 127.0.0.1>nul
 echo you are about to generate: %per% numbers 
 echo which is about nearly
 echo %seco%:seconds 
@@ -67,12 +69,14 @@ pause
 exit
 
 :Fl
-echo Doing it!
+set m=Doing it!
+echo %m% 
 set temp4=0
 
 :STARTl
-if %temp4%==5 ( echo half-way done ... )
-if %temp4%==9 ( echo finishing ... )
+if %temp4%==5 ( set m=half-way done... )
+if %temp4%==7 ( set m=more than half-way done! )
+if %temp4%==9 ( set m=finishing... )
 
 set temp3=%temp4%
 
@@ -97,7 +101,7 @@ echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 SET /A third = %third% + 1
 timeout 0 > nul
 cls
-
+echo %m% 
 goto SEVENEXT3
 
 :SEVEN20
@@ -106,7 +110,7 @@ echo %first%%second%%third%%fourth% / 9999
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 timeout 0 > nul
 cls
-
+echo %m% 
 :SEVEN21
 IF %second%==%temp3% goto SEVEN22
 SET /A second = %second% + 1
@@ -114,7 +118,7 @@ echo %first%%second%%third%%fourth% / 9999
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 timeout 0 > nul
 cls
-
+echo %m% 
 goto SEVEN21
 
 :SEVEN22
@@ -129,7 +133,7 @@ echo %first%%second%%third%%fourth% / 9999
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 timeout 0 > nul
 cls
-
+echo %m% 
 goto SEVEN23
 
 :SEVEN24
@@ -139,7 +143,7 @@ echo %first%%second%%third%%fourth% / 9999
 echo %first%%second%%third%%fourth% >> "%userprofile%\Desktop\wordlist.txt"
 timeout 0 > nul
 cls
-
+echo %m% 
 goto SEVEN24
 
 :SEVEN19
@@ -158,18 +162,27 @@ IF %temp4% == 10 goto ENDl
 IF %temp4% LEQ 9 goto STARTl
 
 :ENDl
+cls
 echo %first%%second%%third%%fourth% / 9999
+color 2
 echo [*] Done!
+color 7
 echo check the file "wordlist" in your desktop.
+color 4
 echo Deleting duplicated letters...
+color 7
 findstr /v /i /c:"0000" wordlist.txt > w0rdlist.txt
 timeout 0 > nul
 echo patching files...
 echo 0000 >> "%userprofile%\Desktop\w0rdlist.txt"
 timeout 0 > nul
+color 2
 echo New file without duplicated letters is located at /Desktop/w0rdlist.txt
+color 4
 echo File with duplicated letters is found at /Desktop/wordlist.txt
+color 2
 echo deleting "wordlist"...
+color 7
 pushd "%userprofile%/Desktop"
 del wordlist.txt
 popd
@@ -185,4 +198,3 @@ start message.vbs
 timeout 0 > nul
 del message.vbs
 exit
-
