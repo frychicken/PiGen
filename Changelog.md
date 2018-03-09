@@ -41,3 +41,10 @@ add w0rdlist.txt to show output
 
 Readmore @Readme.md or in docs/index.md or @index.md
   
+ ## Ver 5.2.2 - Connection Timed Out
+ 
+ Official release 
+ 
+ add doublePiGen.bat (generates 6 digits code) and wordlist1.bat (the output)
+ 
+ readmore @Readme.md or in docs/index.md or @index.md
