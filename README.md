@@ -2,11 +2,11 @@
 
 PIN Generator
 
-Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code), for Windows only at the moment
+Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code and 6 digits code), for Windows only at the moment
 
 In the future, i will create new batch file, shellscript (not this) which will generate all possible combinations alphabet, numeric, special characters password, customize length, support Mac, linux and windows
 
-This is a official release version for Windows ( ver 5.2.1 - Web Server Is Down )
+This is a official release version for Windows ( ver 5.2.2 - Connection Timed Out )
 
 Release alpha for linux and mac @bash/alpha
 
@@ -40,7 +40,15 @@ located at /Oldervers/
 
 located at w0rdlist.txt 
 
+located at wordlist1.txt 
+
+> wordlist1.txt is a file created by doublePiGen.bat (read more below!)
+
 This gives you the output of the program!
+
+# What is doublePiGen.bat?
+
+> Generate all possible combination for 6 digits code !!!
 
 **_all read me and explain for each version included_**
 
