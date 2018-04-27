@@ -2,7 +2,7 @@
 
 PIN Generator
 
-Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code and 6 digits code), for Windows only at the moment
+Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code and 6 digits code OR CUSTOMIZE DIGIT(s)-PiGen2.bat), for Windows only at the moment
 
 In the future, i will create new batch file, shellscript (not this) which will generate all possible combinations alphabet, numeric, special characters password, customize length, support Mac, linux and windows
 
@@ -49,6 +49,18 @@ This gives you the output of the program!
 # What is doublePiGen.bat?
 
 > Generate all possible combination for 6 digits code !!!
+
+# What is PiGen2.bat?
+
+> With this update, you can customize your wordlist length!!!
+
+> For example: You can generate 4 numbers, 6 numbers or 10 numbers,... what ever you want
+
+> Usage: Type in cmd: PiGen2.bat +number
+
+> Ex: > PiGen2.bat 6 
+
+> It will generate all 6 digits number combinations
 
 **_all read me and explain for each version included_**
 
