@@ -48,3 +48,11 @@ Readmore @Readme.md or in docs/index.md or @index.md
  add doublePiGen.bat (generates 6 digits code) and wordlist1.bat (the output)
  
  readmore @Readme.md or in docs/index.md or @index.md
+
+## ver 5.2.3 - Origin Is Unreachable
+
+Official releasr 
+
+add PiGen2.bat (Generate how many digit(s) you desire)
+
+readmore @Readme.md or in docs/index.md or @index.md
