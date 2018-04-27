@@ -6,7 +6,7 @@ Generate all possible combinations of PIN with batch file and only with batch ( 
 
 In the future, i will create new batch file, shellscript (not this) which will generate all possible combinations alphabet, numeric, special characters password, customize length, support Mac, linux and windows
 
-This is a official release version for Windows ( ver 5.2.2 - Connection Timed Out )
+This is a official release version for Windows ( ver 5.2.3 - Origin Is Unreachable )
 
 Release alpha for linux and mac @bash/alpha
 
