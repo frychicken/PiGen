@@ -54,7 +54,7 @@ This gives you the output of the program!
 
 > With this update, you can customize your wordlist length!!!
 
-> For example: You can generate 4 numbers, 6 numbers or 10 numbers,... what ever you want
+> For example: You can generate 4 numbers, 6 numbers or 10 numbers,... whatever you want
 
 > Usage: Type in cmd: PiGen2.bat +number
 
@@ -62,6 +62,6 @@ This gives you the output of the program!
 
 > It will generate all 6 digits number combinations
 
-**_all read me and explain for each version included_**
+**_all "read me" for each version included_**
 
 ## Changelog available @changelog.md
