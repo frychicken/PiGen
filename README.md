@@ -18,20 +18,6 @@ _Why?_
 
  If you download, all the code messed up so it will not do what it does and hard to modify. 
 
-## Older versions:
-
-_Alpha_
-
-located at /alphaver/
-
-_beta_
-
-located at /beta/
-
-_Stable_
-
-located at /Oldervers/
-
 ## Output
 
 located at w0rdlist.txt 
