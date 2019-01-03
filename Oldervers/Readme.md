@@ -38,6 +38,4 @@ located at w0rdlist.txt
 
 This gives you the output of the program!
 
-**_all read me and explain for each version included_**
-
 ## Changelog available @changelog.md
