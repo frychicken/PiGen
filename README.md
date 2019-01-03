@@ -28,6 +28,8 @@ located at w0rdlist.txt
 
 located at wordlist1.txt by doublePiGen.bat
 
+wordlist3.txt by PiGen2.bat
+
 # What is PiGen.bat?
 
 > Generate all possible combination for 4 digits code !!!
