@@ -16,8 +16,4 @@ Copy and paste the code from bat file here to your new text document then remame
 
 _Why?_
 
-> If you download, all the code messed up so it will not do what it does and hard to modify. 
-
-remeber to feedback.
-
-read more, visit index.md or visit this website [here](https://bobdinh139.github.io/PiGen/)  (located on /docs/ folder).
+If you download, all the code messed up so it will not do what it does and hard to modify. 
