@@ -26,11 +26,7 @@ _Why?_
 
 located at w0rdlist.txt 
 
-located at wordlist1.txt 
-
-> wordlist1.txt is a file created by doublePiGen.bat (read more below!)
-
-This gives you the output of the program!
+located at wordlist1.txt by doublePiGen.bat
 
 # What is PiGen.bat?
 
