@@ -2,8 +2,6 @@
 
 PIN Generator
 
-Generate all possible combinations of PIN with batch file and only with batch ( 4 digits code and 6 digits code OR CUSTOMIZE DIGIT(s)-PiGen2.bat), for Windows only at the moment
-
 In the future, i will create new batch file, shellscript (not this) which will generate all possible combinations alphabet, numeric, special characters password, customize length, support Mac, linux and windows
 
 This is a official release version for Windows ( ver 5.2.3 - Origin Is Unreachable )
@@ -16,35 +14,25 @@ Copy and paste the code from bat file here to your new text document then remame
 
 _Why?_
 
-> If you download, all the code messed up so it will not do what it does and hard to modify. 
+ If you download, all the code messed up so it will not do what it does and hard to modify. 
+ 
+## Location
 
-remeber to feedback.
+**.bat** : /Release/
 
-read more, visit index.md or visit this website [here](https://bobdinh139.github.io/PiGen/)  (located on /docs/ folder). (if you jusst want to read more or want to know how this works)
-
-## Older versions:
-
-_Alpha_
-
-located at /alphaver/
-
-_beta_
-
-located at /beta/
-
-_Stable_
-
-located at /Oldervers/
+**.sh**: /bash/
 
 ## Output
 
 located at w0rdlist.txt 
 
-located at wordlist1.txt 
+located at wordlist1.txt by doublePiGen.bat
 
-> wordlist1.txt is a file created by doublePiGen.bat (read more below!)
+wordlist3.txt by PiGen2.bat
 
-This gives you the output of the program!
+# What is PiGen.bat?
+
+> Generate all possible combination for 4 digits code !!!
 
 # What is doublePiGen.bat?
 
@@ -54,7 +42,7 @@ This gives you the output of the program!
 
 > With this update, you can customize your wordlist length!!!
 
-> For example: You can generate 4 numbers, 6 numbers or 10 numbers,... what ever you want
+> For example: You can generate 4 numbers, 6 numbers or 10 numbers,... whatever you want
 
 > Usage: Type in cmd: PiGen2.bat +number
 
@@ -62,6 +50,6 @@ This gives you the output of the program!
 
 > It will generate all 6 digits number combinations
 
-**_all read me and explain for each version included_**
+**_all "read me" for each version included_**
 
 ## Changelog available @changelog.md
