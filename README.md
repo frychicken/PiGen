@@ -24,7 +24,7 @@ _Why?_
 
 ## Output
 
-located at w0rdlist.txt 
+located at w0rdlist.txt by PiGen.bat
 
 located at wordlist1.txt by doublePiGen.bat
 
@@ -42,14 +42,12 @@ wordlist3.txt by PiGen2.bat
 
 > With this update, you can customize your wordlist length!!!
 
-> For example: You can generate 4 numbers, 6 numbers or 10 numbers,... whatever you want
+For example: You can generate 4 numbers, 6 numbers or 10 numbers,... whatever you want
 
-> Usage: Type in cmd: PiGen2.bat +number
+Usage: Type in cmd: PiGen2.bat +number
 
-> Ex: > PiGen2.bat 6 
+Ex: > PiGen2.bat 6 
 
-> It will generate all 6 digits number combinations
-
-**_all "read me" for each version included_**
+-> It will generate all 6 digits number combinations
 
 ## Changelog available @changelog.md
