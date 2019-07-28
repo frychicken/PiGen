@@ -4,19 +4,19 @@ PIN Generator
 
 #### *.bash is deprecated
 
-## how to use
+#### how to use
 
 Open as raw, copy and paste the code from *.bat file here to your new text document, and remame it to *.bat.
 
 (read more below)
  
-## Location
+#### Location
 
 **.bat** : /Release/
 
 **.sh**: /bash/ (deprecated)
 
-## Output
+#### Output
 
 @Desktop/w0rdlist.txt by PiGen.bat
 
@@ -24,15 +24,15 @@ Open as raw, copy and paste the code from *.bat file here to your new text docum
 
 @Desktop/wordlist3.txt by PiGen2.bat
 
-# What is PiGen.bat?
+#### What is PiGen.bat?
 
 > Generates all possible combinations for 4 digits long!!!
 
-# What is doublePiGen.bat?
+#### What is doublePiGen.bat?
 
 > Generates all possible combinations for 6 digits long!!!
 
-# What is PiGen2.bat?
+#### What is PiGen2.bat?
 
 > Generates all possible combinations for n digits long!
 
@@ -44,4 +44,4 @@ Ex: > PiGen2.bat 6
 
 -> It will generate all 6 digits number combinations
 
-## Changelog available @changelog.md
+#### Changelog available @changelog.md
